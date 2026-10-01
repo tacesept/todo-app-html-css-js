@@ -123,12 +123,22 @@ li {
 /* Buttons */
 .task-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 7px;
   margin-top: 12px;
 }
 
 .task-actions button {
-  flex: 1;
+  flex: 1 1 100px;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 400px) {
+  .task-actions button {
+    padding: 8px 6px;
+    font-size: 12px;
+  }
 }
 
 .complete-button {
