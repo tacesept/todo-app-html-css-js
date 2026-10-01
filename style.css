@@ -1,0 +1,175 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: #eef2f7;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  padding: 50px 15px;
+}
+
+.app {
+  background: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid black;
+}
+
+h1 {
+  text-align: center;
+  color: #111827;
+  margin-top: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+.input-box {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #3b82f6;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 9px 12px;
+  color: white;
+  text-shadow: #111827;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid black;
+}
+
+#addButton {
+  background: #2563eb;
+}
+
+#addButton:hover {
+  background: #1d4ed8;
+}
+
+ul {
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  padding: 14px;
+  margin-top: 10px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: 0.2s;
+  border: 1px solid black;
+}
+
+/* Task text area */
+.task-content {
+  position: relative;
+}
+
+.task-text {
+  color: #374151;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  margin: 0;
+}
+
+/* Limit long tasks to 3 lines */
+.task-text.collapsed {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+/* Show more / Show less */
+.toggle-text {
+  display: none;
+  width: 100%;
+  margin-top: 5px;
+  background-color: rgb(237, 229, 229);
+  color: #2563eb;
+  font-size: 12px;
+  padding: 6px;
+}
+
+.toggle-text:hover {
+  opacity: 1;
+  background-color: gray;
+  color: white;
+}
+
+/* Buttons */
+.task-actions {
+  display: flex;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.task-actions button {
+  flex: 1;
+}
+
+.complete-button {
+  background: #16a34a;
+}
+
+.edit-button {
+  background: #f59e0b;
+}
+
+.delete-button {
+  background: #dc2626;
+}
+
+.task-actions button:hover {
+  opacity: 0.85;
+}
+
+/* Completed task */
+li.done {
+  background: #ecfdf5;
+}
+li.done .complete-button {
+  background: #64748b;
+}
+
+.complete-mark {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #22c55e;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+li.done .complete-mark {
+  display: block;
+}
+
+li.done .task-text {
+  color: #6b7280;
+  text-decoration: line-through;
+}
