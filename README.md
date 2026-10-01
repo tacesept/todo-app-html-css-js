@@ -4,7 +4,7 @@ A simple and clean to-do list web app built with HTML, CSS, and JavaScript.
 
 ## Live Site
 
-[View Live Site]([YOUR_LIVE_SITE_URL](https://tacesept.github.io/todo-app-html-css-js/))
+[View Live Site]((https://tacesept.github.io/todo-app-html-css-js/))
 
 ## Preview
 
